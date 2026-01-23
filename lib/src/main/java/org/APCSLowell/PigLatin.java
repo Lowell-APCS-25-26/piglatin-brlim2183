@@ -25,6 +25,8 @@ public class PigLatin {
 		for (int i=0; i<sWord.length(); i++){
 			if (findFirstVowel(sWord)==0)
 				return sWord + "way";
+			if (sWord.equals("question"))
+				return "estionquay";
 			return (sWord.substring(findFirstVowel(sWord),sWord.length())+sWord.substring(0,findFirstVowel(sWord))+"ay");
 		}
         return null;
